@@ -1,0 +1,691 @@
+html,
+body{
+  position: relative;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+body {
+  background: #F0D18F;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 2vh;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper {
+  
+  width: 100%;
+  height: 50vh;
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background:  #F0D18F;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-wrapper{
+    cursor: pointer;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1.5em;
+    color: #f5f5f5;
+    background: rgba(2,1,0,.7);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet{
+    width: .7em;
+    height: .7em;
+    background: #020100;
+    opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #F0D18F;
+}  
+
+/*Swiper End*/
+
+.title-container{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h1{
+    font-size: 2.4em;
+    color: #f5f5f5;
+    text-align: center;
+    text-shadow: 0 6px 8px rgba(2, 1, 0, .20);
+    font-weight: 900;
+    padding: 0;
+    margin: 0 0 3vh;
+}
+
+.title-container p{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #B47E4B;
+    text-align: center;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.title-container b{
+   font-weight: 900;
+}
+
+.swiper-container{
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-content{
+    position: relative;
+    width: 100vw;
+}
+
+.main-content__buttons{
+    height: 25vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons__information-button, .buttons__reservation-button{
+    box-shadow:0 5px 7px rgba(2, 1, 0, .25);
+    transition: .3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #f5f5f5;
+    font-weight: 700;
+    border-radius: 7vw;
+}
+
+.buttons__reservation-button{
+    background: #513922;
+    width: 80%;
+    max-width: 650px;
+    padding: 1.6vh 0;
+    margin: 0 0 2vh;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.buttons__information-button{
+    background: #B47E4B;
+    font-size: .9em;
+    padding: 1.5vh 0;
+    width: 70%;
+    max-width: 500px;
+}
+
+.main-content__description{
+    background: linear-gradient(rgba(240, 209, 143, 0.8),rgba(240, 209, 143, 0.8)),url(Imagenes/0.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 3vw;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+    color: #020100;
+    margin: 0;
+}
+
+.main-content__description p{
+    margin:0;
+}
+
+.main-content__description a{
+    color: #B47E4B;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.map{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: none;
+    margin: 0 0 5vh
+}
+
+.map iframe{
+    height: 80%;
+}
+
+footer{
+    background: #513922;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.icons{
+    position: relative;
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+.icons__icon{
+    display: flex;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    margin: 0 5px 0  0;
+    
+}
+
+footer img{
+    filter: invert(100%) sepia(0%) saturate(6225%) hue-rotate(206deg) brightness(117%) contrast(92%);
+    margin: 0;
+    padding: 0;
+    width: 24px;
+}
+
+.phone-icon{
+    width: auto;
+    height: 24px;
+}
+
+#phone-number{
+    text-decoration: none;
+    color: #f5f5f5;
+    text-align: center;
+    font-weight: 500;
+    align-self: center;
+    margin: 0 5px 0;
+    transform: translateY(10%);
+    font-size: 1em;
+}
+
+  
+.modal-content{
+    background: none;
+    margin: 0 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border: none;
+    animation: slide-down .6s forwards;
+}
+
+.modal-content img{
+    object-fit: contain;
+    
+}
+
+.modal .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #020100;
+}
+
+.form-modal, .modal{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,.9);
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-modal[open], .modal[open]{
+    animation: fade-in .6s forwards;
+    display: flex;
+}
+
+.form-modal[closing], .modal[closing]{
+    display: flex;
+    animation: fade-out .6s forwards;
+}
+
+.form-modal[close], .modal[close]{
+    display: none;
+}
+
+.form-modal form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F0D18F;
+    padding: 2vh 0;
+    border-radius: 1em;
+    width: 90%;
+    max-width: 900px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation: slide-down .6s forwards;
+}
+
+.form-modal form h3{
+    display: inline-block;
+    font-size: 1.3em;  
+    padding: 0 1em; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.form-modal form input, .form-modal form textarea{
+    padding: 2vh 2vw;
+    background: #f5f5f5 ;
+    border-radius: 1em;
+    font-size: 1.1em;
+    width: 75%;
+    max-width: 750px;
+    margin: 1vh auto;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.form-modal form input:focus, .form-modal form textarea:focus{
+    background: #e5e5e5;
+    color: #020100;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.form-modal button{
+    margin: 1vh auto;
+    width: 55%;
+    max-width: 550px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    border: none;
+    padding: 1vw;
+    background: #513922;
+    color: #f5f5f5;
+    font-size: 1.3em;
+    border-radius: 25vw;
+    transition: transform .3s;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4);
+
+}
+
+.form-modal .cancel-button{
+    width: 40%;
+    max-width: 400px;
+    font-size: 1.1em;
+    background: none;
+    color: #513922;
+    border: 2px solid #513922;
+    padding: .6vw;
+    box-shadow: none;
+    transition: background .3s, color .3s, box-shadow .3s; 
+}
+
+@keyframes fade-in {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100%{opacity:0;}
+}
+
+@keyframes slide-down {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}
+
+
+@media screen and (min-width:700px) and (min-height:1050px){
+    .modal-content{
+        background: #F0D18F;
+        width: 90%;
+    }    
+
+    .modal-content .swiper-slide{
+        background: #F0D18F;
+    }
+
+    .modal-content .swiper-pagination-bullet-active{
+        background: #020100;
+    }
+}  
+  
+
+@media screen and (min-width: 800px) and (max-height:800px){
+    .title-container{
+        width: 50%;
+        height: 30vh;
+        margin: 0;
+        justify-content: center;
+        padding: 0 2vw
+    }
+
+    
+    .swipper-container{
+        position: absolute;
+        box-sizing: border-box;
+        width: 50%;
+        height: 95%;
+        top:0;
+        right: 0;
+        padding: 0;
+        margin:0
+    }
+    .swiper{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        width: 50%;
+        height: 65vh;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+    }
+
+    .main-content__buttons{
+        width: 100%;
+    }
+
+    .map{
+        height:95vh;
+        background: #B47E4B;
+    }
+
+    .icons__icon{
+       width: 2em;
+       height: 2em; 
+    }
+
+    .phone-icon{
+        width: auto;
+        height: 2em;
+    }
+
+    footer img{
+        width: 2em;
+    }
+
+    #phone-number{
+        font-size: 1em;
+    }
+
+    .modal-content{
+        width: 80%;
+        background: none;
+    }
+
+    .modal-content .swiper-pagination-bullet-active {
+        background: #F0D18F;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+        
+    .modal-content{
+        width:80%;
+        background: none;
+        margin: 0;
+    }
+
+    .modal-content .swiper-slide{
+        background: none;
+    }
+
+    .modal-content .swiper-button-next:after, .modal-content .swiper-button-prev:after{
+        background: none;
+    }
+
+    .modal-content .swiper-pagination-bullet-active{
+        background: #F0D18F;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-height: 1000px) {
+    .title-container{
+        width: 50%;
+        height: 30vh;
+        margin: 0;
+        justify-content: center;
+        padding: 0 2vw
+    }
+
+    
+    .swipper-container{
+        position: absolute;
+        box-sizing: border-box;
+        width: 50%;
+        height: 95%;
+        top:0;
+        right: 0;
+        padding: 0;
+        margin:0
+    }
+    .swiper{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        width: 50%;
+        height: 65vh;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+    }
+
+    .main-content__buttons{
+        width: 100%;
+    }
+
+    .icons__icon{
+       width: 2em;
+       height: 2em; 
+    }
+
+    .phone-icon{
+        width: auto;
+        height: 2em;
+    }
+
+    footer img{
+        width: 2em;
+    }
+
+    #phone-number{
+        font-size: 1em;
+    }
+
+    .modal-content{
+        width:70%;
+        background: none;
+        margin: 0;
+    }
+
+    .modal-content .swiper-button-next:after, .modal-content .swiper-button-prev:after{
+        background: rgba(2,1,0,.7);
+    }
+
+    .form-modal button:hover, .form-modal button:focus{
+        transform: scale(1.2);
+        transition: transform .3s;
+        cursor:pointer;
+    }
+
+    .form-modal .cancel-button:hover, .form-modal .cancel-button:focus{
+        transform: none;
+        background: #513922;
+        color: #f5f5f5;
+        transition: .3s;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4);
+    }
+
+    .buttons__reservation-button:hover, .buttons__information-button:hover{
+        transform: scale(1.1);
+        transition: .3s;
+     
+     }
+
+}
+
+@media screen and (min-width: 1500px) and (max-height: 1500px){
+    .title-container{
+        width: 50%;
+        height: 30vh;
+        margin: 0;
+        justify-content: center;
+        padding: 0 2vw
+    }
+
+    
+    .swipper-container{
+        position: absolute;
+        box-sizing: border-box;
+        width: 50%;
+        height: 95%;
+        top:0;
+        right: 0;
+        padding: 0;
+        margin:0
+    }
+    .swiper{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        width: 50%;
+        height: 65vh;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+    }
+
+    .main-content__buttons{
+        width: 100%;
+    }
+
+    .icons__icon{
+       width: 2em;
+       height: 2em; 
+    }
+
+    .phone-icon{
+        width: auto;
+        height: 2em;
+    }
+
+    footer img{
+        width: 2em;
+    }
+
+    #phone-number{
+        font-size: 1em;
+    }
+
+    .modal-content{
+        width:60%;
+        background: none;
+    }
+
+    .modal .swiper-pagination-bullet-active{
+        background: #F0D18F;
+    }
+
+    .modal-content .swiper-button-next:after, .modal-content .swiper-button-prev:after{
+        background: rgba(2,1,0,.7);
+    }
+
+    .form-modal button:hover, .form-modal button:focus{
+        transform: scale(1.2);
+        transition: transform .3s;
+        cursor:pointer;
+    }
+
+    .form-modal .cancel-button:hover, .form-modal .cancel-button:focus{
+        transform: none;
+        background: #513922;
+        color: #f5f5f5;
+        transition: .3s;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.4);
+    }
+
+    .buttons__reservation-button:hover, .buttons__information-button:hover{
+        transform: scale(1.1);
+        transition: .3s;
+     
+     }
+}

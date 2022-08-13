@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyla Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contactus.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&f[]=clash-display@700,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="brand">Zyla Flowers</span>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" target="_blank">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="contactus.html" class="nav-link active" target="_blank">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="nav-link" target="_blank">About Us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="contact-us">Contact Us</h1>
+    <div class="contact-container">
+      <div class="contact-form-container">
+        <form action="https://formsubmit.co/mobili.jeremias@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Contact Us messege" id="subject">
+          <input type="hidden" name="_captcha" value="false">
+  
+          <label for="name">Name</label>
+          <input type="text" name="name" required autocomplete="off"> 
+  
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+  
+          <label for="messege">Write your messege</label>
+          <textarea name="messege" required autocomplete="off" rows="6"></textarea>
+
+          <button type="submit" class="alternative-btn send-btn">Send</button>
+        </form>
+      </div>
+      <div class="or">
+        <span class="div-line"></span>
+        <span class="div-text">Or</span>
+        <span class="div-line"></span>
+      </div>
+      <div class="direct-contact-container">
+        <div class="contact-links-container">
+          <ul class="contact-links">
+            <li>
+              <a href="tel:123-456-7890" target="_blank">
+                <img src="Images/phone.svg" alt="">
+                <span class="link-text">+1 (914) 863 3145</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="Images/instagram.svg" alt="">
+                <span class="link-text">@ZylaFlowers</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="Images/facebook.svg" alt="">
+                <span class="link-text">@ZylaFlowerShop</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="visit-us">
+          <span class="div-line"></span>
+          <span class="div-text">Visit us</span>
+          <span class="div-line"></span>
+        </div>
+        <div class="adress-container">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d12801843.124722112!2d-108.4934349!3d38.431073999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x54beee9c904e0169%3A0xd0a5282e9a7c5c02!2sCondado%20de%20Jefferson%2C%20Oreg%C3%B3n%2C%20EE.%20UU.!3m2!1d44.6673324!2d-121.1785788!5e0!3m2!1ses-419!2sar!4v1660168738549!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          </div>
+          <address>
+            2310 Poe Lane<br>
+          </address>
+        </div>
+      </div>     
+    </div>
+  </main>
+  <script src="HamburgerMenu/hamburger.js"></script>
+</body>

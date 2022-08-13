@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyla Flowers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&f[]=clash-display@700,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="brand">Zyla Flowers</span>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active" target="_blank">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="contactus.html" class="nav-link" target="_blank">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="nav-link" target="_blank">About Us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-container">
+      <h1>Your Flower Shop In Kansas City, KS</h1>  
+      <p>We will help you pick the best bouquet for every occasion</p>
+      <div class="btns-container">
+        <a href="contactus.html">
+          <button class="main-btn">
+            <h3>Contact Us</h3>
+          </button>
+        </a>
+        <a href="#bouquets">
+          <button class="secondary-btn">
+            <h3>Our Services</h3>
+          </button>
+        </a>
+      </div>
+    <div class="hero-img-container">
+      <img src="images/Main Bouquet.png" alt="Roses Bouquet">
+    </div>
+    </div>
+    <div class="bouquets-container"  id="bouquets">
+      <div class="bouquets-cards-container">
+        <div class="wedding-bouquet card">
+          <div class="card-img-container">
+            <img src="images/Wedding Bouquet.jpg" alt="Wedding Bouquet">
+          </div>
+          <div class="card-text wedding-bouquet-text">
+            <h2>Wedding Bouquets</h2>
+            <p>We will create the most special bouquets for your most special day.</p>
+          </div>
+        </div>
+        <div class="sympathy-bouquet card">
+          <div class="card-img-container">
+            <img src="images/Sympathy Bouquet.jpg" alt="Sympathy Bouquet">
+          </div>
+          <div class="card-text sympathy-text">
+            <h2>Sympathy Bouquets</h2>
+            <p>When things get tough we will be help you to show your support.</p>
+          </div>
+        </div>
+        <div class="every-occasion-bouquet card">
+          <div class="card-img-container">
+            <img src="images/Every Occasion Bouquet.jpg" alt="Bouquet">
+          </div>
+          <div class="card-text">
+            <h2>Every Occasion Bouquets</h2>
+            <p>Every occasion is great for a bouquet. We have flowers for everyone.</p>
+          </div>
+        </div>
+      </div>
+      <a>
+        <button class="alternative-btn bouquetBtn"><h3>Order your bouquet</h3></button>
+      </a>
+    </div>
+    <div class="newsletter-container">
+      <div class="newsletter-img-container white-roses">
+        <img src="images/White Roses.png" alt="">
+      </div>
+      <div class="newsletter-img-container roses">
+        <img src="images/Roses.png" alt="">
+      </div>
+      <div class="text-container">
+        <p class="nl-title">Suscribe To Our Newsletter</p>
+        <p class="nl-text">Get special discounts, coupons and our daily bouquets for a smaller price</p>
+      </div>
+      <div class="form-container">
+        <form action="https://formsubmit.co/10aa04f39a4a014ff5b91f5a87375e6c" method="POST">
+          <input type="hidden" name="_subject" value="Suscription to newsletter">
+          <input type="hidden" name="_autoresponse" value="Thank you for subscribing to our Newsletter, we will send you discounts, coupons and information on our daily bouquet.">
+          <label for="name">Name</label>
+          <input type="text" name="name" required autocomplete="off" >
+          <label for="email">Email</label>
+          <input type="email" name="email" required autocomplete="email">
+          <input type="submit" value="Suscribe">
+        </form>
+      </div>
+    </div>
+    <div class="events-container">
+      <div class="events-cards-container">
+        <div class="wedding-event card">
+          <div class="card-img-container">
+            <img src="images/Wedding.jpg" alt="Wedding Event">
+          </div>
+          <div class="card-text weddings-text">
+            <h2>Weddings</h2>
+            <p>We will decorate your wedding to make your special day absolutely amazing.</p>
+          </div>
+        </div>
+        <div class="corporate-event card">
+          <div class="card-img-container">
+            <img src="images/Corporate Event.jpg" alt="Corporate Event">
+          </div>
+          <div class="card-text">
+            <h2>Corporate Event</h2>
+            <p>We will take care to set the proper ambience for your corporate event.</p>
+          </div>
+        </div>
+        <div class="personal-event card">
+          <div class="card-img-container personal-img-container">
+            <img src="images/Personal Event.jpg" alt="Personal Event">
+          </div>
+          <div class="card-text">
+            <h2>Personal Event</h2>
+            <p>We will make all your events stand out, creating unique decorations for your needs.</p>
+          </div>
+        </div>
+      </div>
+      <a>
+        <button class="alternative-btn eventBtn">
+          <h3>Hire us for your event</h3>
+        </button>
+      </a>
+    </div>
+    <!--modal starts-->
+    <div class="form-modal"> 
+      <form action="https://formsubmit.co/mobili.jeremias@gmail.com" method="POST">
+          <h3 id="form-msg">Contact us for your bouquet</h3>
+          <input type="hidden" name="_subject" value="I want a Bouquet" id="subject">
+          <input type="hidden" name="_captcha" value="false">
+
+          <label for="name">Name</label>
+          <input type="text" name="name" required autocomplete="off"> 
+
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+
+          <label for="messege">Write your messege</label>
+          <textarea name="messege" required autocomplete="off" rows="6"></textarea>
+          <button type="submit">Send</button>
+          <button class="cancel-button" type="button">Cancel</button>
+     </form>
+  </div>
+  <!--modal ends-->
+  </main>
+  <script src="HamburgerMenu/hamburger.js"></script>
+  <script src="code.js"></script>
+</body>
+</html>
